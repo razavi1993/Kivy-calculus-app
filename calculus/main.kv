@@ -1,0 +1,34 @@
+<MyLayout>:
+	TextInput:
+		id: my_func
+		hint_text: "x**4 + cos(x)"
+		font_size: 28
+		pos_hint: {'center_x': 0.5, 'center_y': 0.85}
+		size_hint: 0.8,0.1
+		multiline: False
+
+	Button:
+		id: integrate
+		text: "Integrate"
+		font_size: 28
+		pos_hint: {'center_x': 0.29, 'center_y': 0.72}
+		size_hint: 0.38,0.1
+		on_press: root.show_integ()
+
+	Button:
+		id: differentiate
+		text: "Differentiate"
+		font_size: 28
+		pos_hint: {'center_x': 0.71, 'center_y': 0.72}
+		size_hint: 0.38,0.1
+		on_press: root.show_deriv()
+
+	TextInput:
+		id: result
+		hint_text: ""
+		color: 0,0,0,1
+		font_size: 20
+		pos_hint: {'center_x': 0.5, 'center_y': 0.35}
+		size_hint: 0.8,0.5
+		multiline: True
+
